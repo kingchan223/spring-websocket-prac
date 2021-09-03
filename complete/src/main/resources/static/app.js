@@ -36,7 +36,7 @@ function disconnect() {
     $("#name-space").show();
     console.log("Disconnected");
 }
-//추가
+//추가//
 function sendName() {
     stompClient.send("/app/hello", {}, JSON.stringify({'content': $("#content").val(), 'username':username}));
 }
