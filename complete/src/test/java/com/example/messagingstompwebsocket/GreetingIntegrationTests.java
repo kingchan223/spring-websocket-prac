@@ -80,7 +80,7 @@ public class GreetingIntegrationTests {
 					}
 				});
 				try {
-					session.send("/app/hello", new HelloMessage("Spring"));
+					session.send("/app/hello", new HelloMessage("Spring", "hi"));
 				} catch (Throwable t) {
 					failure.set(t);
 					latch.countDown();
